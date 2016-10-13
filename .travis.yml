@@ -13,3 +13,4 @@ deploy:
   file: configmagic
   on:
     repo: SISheogorath/configmagic
+    tags: true
