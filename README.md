@@ -11,7 +11,7 @@ CM_something=anything ./configmagic <inputfile> <outputfile>
 
 ## Where to use it?
 
-`configmagic` is built for usage in dockercontainer where you don't want to use big config management or templating engines like [Puppet](https://puppet.com/) oder [Ansible])(http://ansible.com).
+`configmagic` is built for usage in dockercontainer where you don't want to use big config management or templating engines like [Puppet](https://puppet.com/) oder [Ansible](http://ansible.com).
 
 # Build
 ```bash
