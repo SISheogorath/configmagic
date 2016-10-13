@@ -1,0 +1,15 @@
+compiler:
+- gcc
+dist: trusty
+notifications:
+  email: false
+script:
+    - g++ configmagic.cpp -std=c++0x -o configmagic
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: gkyMEtjAsow/jTMy1Ib1nBid2EdqvtGXXX/T0kUldhwbcvSsMdwUmh9aC6DzwcyQGfmjutdfKfo7qFsJMVNTrKCSC1pVT7dprJAClfl8ytwJyppgVgWVElQ2HUkq6ebtH70vFULD6NyCQqSOmUofysASWy04I9BkFSStrllj+bS8DDBONq426bt960/tquKFoXA6N6o7d1cUs7BAJ2xRIj/WHK19Sk5rNYOSpxSv7J/BnUxIcXnNM5AoaDJqFBqqPCCqo/3ITsmuo65MliU/4dgSaqJp5wd+7ZBKMW3Kkb7yxYk4v1PxT+uiB0SN6pvN6wXuYvSYHJG683PTOCSpORwCGtxs5q2C58ngCv0DXZxur+pa5nbJ6rItPNyqT4jsCojIpHEXA+HA6f8ccBMcSWsxKZvGaU4XNIr5H7tmW2T2ghf5640sqtcBJlTRFHdelC1w0g0dtkC0qqNCSebVlkOPuDLbu/KfkmAg9kIzqw8gdF8I5Ct9yJO3ycAjQtGyFwB4x8M75dUzG4ESxrZsaNPLm6P4mRPdKbCYiRW2zH7R8grEie/VsE0LByyeFodylG0ks5f+ZPoLieUvkEu2etH/GLlFd6SOtmgwPobajTyEMHuyO7fUs7WGsQHOSe2yDCUwpPFVxKmIG51fuL84GDyfDimblfXzB6m2N9xTfdc=
+  file: configmagic
+  on:
+    repo: SISheogorath/configmagic
