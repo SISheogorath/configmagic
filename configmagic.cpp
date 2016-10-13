@@ -7,7 +7,7 @@ using namespace std;
 
 int main(int argc, char **argv, char** envp)
 {
-    if (argv.length < 2)
+    if (argc != 3)
     {
         cerr << "Use ./configmagic <inputfile> <outputfile>" << "\n";
         return 1;
