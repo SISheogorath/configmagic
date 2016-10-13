@@ -4,7 +4,7 @@ dist: trusty
 notifications:
   email: false
 script:
-    - g++ configmagic.cpp -std=c++0x -o configmagic
+    - g++ configmagic.cpp -static -std=c++0x -o configmagic
 deploy:
   skip_cleanup: true
   provider: releases
